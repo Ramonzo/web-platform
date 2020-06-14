@@ -16,4 +16,5 @@ function setup() {
 function draw() {
   background(255);
   image(mapImg, -3000, -3000, 5000, 5000);
+  drawLines();
 }
