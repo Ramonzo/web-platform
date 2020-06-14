@@ -33089,7 +33089,7 @@
         }, l.Map.prototype = {
             transX: 0,
             transY: 0,
-            scale: 1,
+            scale: 10,
             baseTransX: 0,
             baseTransY: 0,
             baseScale: 1,
