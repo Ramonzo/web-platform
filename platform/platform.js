@@ -3,6 +3,7 @@ let screenW = 0;
 let screenH = 0;
 //Image Brazil
 let mapImg;
+let tuckImg;
 //Node
 let node = [
             [50, 50],
@@ -23,14 +24,17 @@ let drivers = [];
 
 function preload(){
   mapImg = loadImage("assets/img/map.png");
+  truckImg = loadImage("assets/img/truck.png");
 }
 
 function setup() {
+  frameRate(30);
   screenW = (windowWidth*61)/100;
   screenH = (windowHeight*80)/100;
   let myCanvas = createCanvas(screenW, screenH);
   myCanvas.parent("map");
   createToten();
+  createDriver();
 }
 
 function draw() {
@@ -38,4 +42,6 @@ function draw() {
   image(mapImg, -3000, -3000, 5000, 5000);
   drawLines();
   drawToten();
+  moveDriver();
+  drawDriver();
 }

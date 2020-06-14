@@ -17,14 +17,37 @@ function drawLines(){
   line(node[6][0], node[6][1], node[7][0], node[7][1]);
   line(node[7][0], node[7][1], node[8][0], node[8][1]);
   line(node[8][0], node[8][1], node[9][0], node[9][1]);
-  line(node[9][0], node[9][1], node[10][0], node[10][1]);
 }
 //Create echo toten representation
 function createToten(){
+  //Creating totens
+  for(let i = 0; i < node.length; i++){
+    totens[i] = new Toten(i);
+  }
 }
 //Draw echo toten representation
 function drawToten(){
-  ellipseMode(CENTER);
-  noStronke();
-  
+  //Drawing totens
+  for(let i = 0; i < node.length; i++){
+    totens[i].draw();
+  }
+}
+//Create drivers representation
+function createDriver(){
+  //Creating drivers
+  for(let i = 0; i < 30; i++){
+    drivers[i] = new Driver(0, random(400, 10000), random(1000, 4000));
+  }
+}
+//Draw drivers representation
+function drawDriver(){
+  //Drawing drivers
+  for(let i = 0; i < 30; i++){
+    drivers[i].draw();
+  }
+}
+function moveDriver(){
+  for(let i = 0; i < 30; i++){
+    drivers[i].move();
+  }
 }
