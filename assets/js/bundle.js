@@ -781,29 +781,13 @@ webpackJsonp([0], {
                             }
                         },
                         markers: [{
-                            latLng: [21, 78],
-                            name: "INDIA : 350"
-                        }, {
-                            latLng: [-33, 151],
-                            name: "Australia : 250"
-                        }, {
-                            latLng: [36.77, -119.41],
-                            name: "USA : 250"
-                        }, {
-                            latLng: [55.37, -3.41],
-                            name: "UK   : 250"
-                        }, {
-                            latLng: [25.2, 55.27],
-                            name: "UAE : 250"
+                            latLng: [-20, -45],
+                            name: "SPVias"
                         }],
                         series: {
                             regions: [{
                                 values: {
-                                    US: 298,
-                                    SA: 200,
-                                    AU: 760,
-                                    IN: 200,
-                                    GB: 120
+                                    BR: 298
                                 },
                                 scale: ["#03a9f3", "#02a7f1"],
                                 normalizeFunction: "polynomial"
